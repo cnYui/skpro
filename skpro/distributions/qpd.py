@@ -24,8 +24,6 @@ class QPD_Johnson(_DelegatedDistribution):
     A Johnson QPD distribution is parameterized by a symmetric-percentile triplet (SPT),
     at quantiles alpha, 0.5, and 1-alpha, respectively.
 
-    see https://repositories.lib.utexas.edu/bitstream/handle/2152
-        /63037/HADLOCK-DISSERTATION-2017.pdf
     Parameter names are as in the reference, except for the parameter lambda,
     which is renamed to kappa, as lambda is a reserved keyword in python.
 
@@ -66,6 +64,11 @@ class QPD_Johnson(_DelegatedDistribution):
     ...       )  # doctest: +SKIP
     >>>
     >>> qpd.mean()  # doctest: +SKIP
+
+    References
+    ----------
+    Hadlock, F. (2017). Quantile-Parameterized Distributions for Probabilistic
+      Forecasting. University of Texas at Austin.
     """
 
     _tags = {
@@ -172,11 +175,10 @@ class QPD_Johnson(_DelegatedDistribution):
 class QPD_S(BaseDistribution):
     """Johnson Quantile-Parameterized Distributions with semi-bounded mode.
 
-    see https://repositories.lib.utexas.edu/bitstream/handle/2152
-        /63037/HADLOCK-DISSERTATION-2017.pdf
+    A distribution parameterized by a symmetric-percentile triplet (SPT).
+
     (Due to the Python keyword, the parameter lambda from
-    this reference is named kappa below.)
-    A distribution is parameterized by a symmetric-percentile triplet (SPT).
+    the reference is named kappa below.)
 
     Parameters
     ----------
@@ -206,6 +208,11 @@ class QPD_S(BaseDistribution):
     ...       )  # doctest: +SKIP
 
     >>> qpd.mean()  # doctest: +SKIP
+
+    References
+    ----------
+    Hadlock, F. (2017). Quantile-Parameterized Distributions for Probabilistic
+      Forecasting. University of Texas at Austin.
     """
 
     _tags = {
@@ -359,11 +366,10 @@ class QPD_S(BaseDistribution):
 class QPD_B(BaseDistribution):
     """Johnson Quantile-Parameterized Distributions with bounded mode.
 
-    see https://repositories.lib.utexas.edu/bitstream/handle/2152
-        /63037/HADLOCK-DISSERTATION-2017.pdf
+    A distribution parameterized by a symmetric-percentile triplet (SPT).
+
     (Due to the Python keyword, the parameter lambda from
     this reference is named kappa below).
-    A distribution is parameterized by a symmetric-percentile triplet (SPT).
 
     Parameters
     ----------
@@ -394,6 +400,11 @@ class QPD_B(BaseDistribution):
     ...       )  # doctest: +SKIP
 
     >>> qpd.mean()  # doctest: +SKIP
+
+    References
+    ----------
+    Hadlock, F. (2017). Quantile-Parameterized Distributions for Probabilistic
+      Forecasting. University of Texas at Austin.
     """
 
     _tags = {
@@ -549,11 +560,10 @@ class QPD_B(BaseDistribution):
 class QPD_U(BaseDistribution):
     """Johnson Quantile-Parameterized Distributions with unbounded mode.
 
-    see https://repositories.lib.utexas.edu/bitstream/handle/2152
-        /63037/HADLOCK-DISSERTATION-2017.pdf
+    A distribution parameterized by a symmetric-percentile triplet (SPT).
+
     (Due to the Python keyword, the parameter lambda from
     this reference is named kappa below).
-    A distribution is parameterized by a symmetric-percentile triplet (SPT).
 
     Parameters
     ----------
@@ -580,6 +590,11 @@ class QPD_U(BaseDistribution):
     ...       )  # doctest: +SKIP
 
     >>> qpd.mean()  # doctest: +SKIP
+
+    References
+    ----------
+    Hadlock, F. (2017). Quantile-Parameterized Distributions for Probabilistic
+      Forecasting. University of Texas at Austin.
     """
 
     _tags = {
