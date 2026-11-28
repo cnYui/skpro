@@ -10,11 +10,13 @@ from sklearn.base import BaseEstimator
 
 
 class J_QPD_S:
-    """
-    Implementation of the semi-bounded mode of Johnson Quantile-Parameterized
-    Distributions (J-QPD), see https://repositories.lib.utexas.edu/bitstream/handle/2152/63037/HADLOCK-DISSERTATION-2017.pdf
-    (Due to the Python keyword, the parameter lambda from this reference is named kappa below.).
-    A distribution is parameterized by a symmetric-percentile triplet (SPT).
+    """Semi-bounded mode of Johnson Quantile-Parameterized  Distributions (J-QPD).
+
+    A distribution parameterized by a symmetric-percentile triplet (SPT),
+    see Hadlock (2017).
+
+    (Due to the Python keyword, the parameter lambda from this reference
+    is named kappa below.)
 
     Parameters
     ----------
@@ -30,6 +32,11 @@ class J_QPD_S:
         lower bound of semi-bounded range (default is 0)
     version: str
         options are ``normal`` (default) or ``logistic``
+
+    References
+    ----------
+    Hadlock, F. (2017). Quantile-Parameterized Distributions for Probabilistic
+      Forecasting. University of Texas at Austin.
     """
 
     def __init__(
@@ -189,11 +196,13 @@ class J_QPD_S:
 
 
 class J_QPD_B:
-    """
-    Implementation of the bounded mode of Johnson Quantile-Parameterized
-    Distributions (J-QPD), see https://repositories.lib.utexas.edu/bitstream/handle/2152/63037/HADLOCK-DISSERTATION-2017.pdf.
-    (Due to the Python keyword, the parameter lambda from this reference is named kappa below.)
-    A distribution is parameterized by a symmetric-percentile triplet (SPT).
+    """Bounded mode of Johnson Quantile-Parameterized Distributions (J-QPD).
+
+    A distribution parameterized by a symmetric-percentile triplet (SPT),
+    see Hadlock (2017).
+
+    (Due to the Python keyword, the parameter lambda from this reference is
+    named kappa below.)
 
     Parameters
     ----------
@@ -211,6 +220,11 @@ class J_QPD_B:
         upper bound of supported range
     version: str
         options are ``normal`` (default) or ``logistic``
+
+    References
+    ----------
+    Hadlock, F. (2017). Quantile-Parameterized Distributions for Probabilistic
+      Forecasting. University of Texas at Austin.
     """
 
     def __init__(
